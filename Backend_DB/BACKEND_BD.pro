@@ -1,0 +1,10 @@
+TEMPLATE = app
+CONFIG += console c++11
+CONFIG -= app_bundle
+
+SOURCES += main.cpp \
+           DatabaseManager.cpp
+
+HEADERS += DatabaseManager.h
+
+QT += core sql
