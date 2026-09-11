@@ -8,7 +8,17 @@ INCLUDEPATH += src/Model \
                src/View \
                src/Controller
 
-SOURCES += src/main.cpp
-HEADERS +=
-FORMS +=
+SOURCES += \
+    src/main.cpp \
+    src/View/MainWindow.cpp
+
+HEADERS += \
+    src/View/MainWindow.h
+
+FORMS += \
+    src/View/LoginWindow.ui \
+    src/View/StudentCheckIn.ui \
+    src/View/LecturerDashboard.ui \
+    src/View/AttendanceReport.ui
+
 DESTDIR = ./bin
