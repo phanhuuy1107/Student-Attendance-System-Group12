@@ -11,4 +11,8 @@ INCLUDEPATH += src/Model \
 SOURCES += src/main.cpp
 HEADERS +=
 FORMS +=
+src/View/LoginWindow.ui \
+    src/View/StudentCheckIn.ui \
+    src/View/LecturerDashboard.ui \
+    src/View/AttendanceReport.ui
 DESTDIR = ./bin
