@@ -15,7 +15,8 @@ SOURCES += \
     src/Model/Course.cpp \
     src/Model/LeaveRequest.cpp \
     src/Model/User.cpp
-
+    src/Model/DatabaseManager.cpp \
+    src/Model/DatabaseManager.h \
 HEADERS += \
     src/View/MainWindow.h \
     src/Model/AttendanceRecord.h \
@@ -24,6 +25,8 @@ HEADERS += \
     src/Model/LeaveRequest.h \
     src/Model/User.h \
     src/Model/DatabaseManager.h
+    src/Model/DatabaseManager.cpp \
+    src/Model/DatabaseManager.h \
 
 FORMS += \
     src/View/LoginWindow.ui \
