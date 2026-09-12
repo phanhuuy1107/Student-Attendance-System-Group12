@@ -1,32 +1,32 @@
 #ifndef DATABASEMANAGER_H
 #define DATABASEMANAGER_H
 
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
+#include <QtSql/QSqlError>
+#include <QDebug>
 #include <QString>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QVector>
 
 class DatabaseManager {
+private:
+    QSqlDatabase db;
+    DatabaseManager(); 
+    ~DatabaseManager();
+
 public:
     static DatabaseManager& getInstance();
+    bool connectDB(const QString &path = "student_attendance.db");
+    bool initTables();
 
-    // Khoi tao va dong ket noi SQLite
-    bool initDatabase(const QString &dbPath = "database/attendance.db");
-    void closeDatabase();
+    // Các hàm CRUD cho Account
+    bool addAccount(const QString &username, const QString &password, const QString &role);
+    bool checkLogin(const QString &username, const QString &password, QString &role);
+    bool updateAccountPassword(int accountId, const QString &newPassword);
+    bool deleteAccount(int accountId);
 
-    // FR1: Quan ly Account & Dang nhap (Ky Anh)
-    bool authenticateUser(const QString &username, const QString &password, QString &role, int &userId);
-
-    // FR6: Xuat du lieu va Thong ke Report (Ky Anh)
-    QVector<QStringList> getAttendanceReport(int sessionId);
-
-private:
-    DatabaseManager() = default;
-    ~DatabaseManager();
-    DatabaseManager(const DatabaseManager&) = delete;
-    DatabaseManager& operator=(const DatabaseManager&) = delete;
-
-    QSqlDatabase db;
+    // Các hàm CRUD cho Report / Attendance
+    bool addReport(int accountId, const QString &status, const QString &checkInTime);
+    QSqlQuery getReports();
 };
 
 #endif // DATABASEMANAGER_H
