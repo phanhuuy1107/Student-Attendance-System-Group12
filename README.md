@@ -16,8 +16,8 @@
 ## 🎯 3. Phân Công Công Việc (Task Assignment)
 *(Deadline ghép code nội bộ: 22:00, 11/09/2026)*
 
-| STT | Thành viên | Vai trò | Nhiệm vụ chính |
-|:---:|---|---|---|
+| STT | Thành viên | Vai trò | Nhiệm vụ chính |Progress |
+|:---:|---|---|---|:---:|
 | **1** | **Hữu Ý (Leader)** | DevOps & Architect | Setup GitHub, Docker, kiến trúc MVC, ghép code Controller. | **120%** |
 | **2** | **Kỳ Anh** | Backend & DB | Tạo SQLite DB, code hàm CRUD, quản lý Account/Report. | **100%** |
 | **3** | **Như Quỳnh** | Core OOP & Unit Test| Code các Class chuẩn UML, sinh QR/PIN, viết Unit Test (QtTest). |**100%** |
