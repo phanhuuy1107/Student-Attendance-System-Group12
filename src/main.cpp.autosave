@@ -1,7 +1,7 @@
 #include <QApplication>
 #include "DatabaseManager.h"
 #include "AttendanceController.h"
-#include "User.h" // Nh? include User.h d? dùng hàm bam m?t kh?u
+#include "User.h" // Nh? include User.h d? dùng hàm bam mat khau
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
@@ -10,8 +10,8 @@ int main(int argc, char *argv[]) {
     db.connectDB("attendance_system.db");
     db.initTables();
 
-    // THÊM TÀI KHO?N M?U Ð? TEST (Ch? ch?y m?t l?n ho?c dùng IF ki?m tra)
-    QString hashedPwd = User::hashPassword("123456"); // M?t kh?u là: 123456
+    // THÊM TÀI KHO?N M?U Ð? TEST (Cho chay mot lan hoac dùng IF kiem tra)
+    QString hashedPwd = User::hashPassword("123456"); // Mat kh?u là: 123456
     db.addAccount("teacher", hashedPwd, "Lecturer"); // Tài kho?n gi?ng viên
     db.addAccount("student", hashedPwd, "Student");  // Tài kho?n sinh viên
 

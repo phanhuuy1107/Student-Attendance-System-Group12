@@ -14,6 +14,7 @@ private:
     QString status;
     std::set<int> checkedInStudents;// NFR Integrity
 public:
+    AttendanceSession(int durationInMinutes);
     AttendanceSession(int sId, int cId, int dur);
     // thuật toán sinh mã động
     QString generateQRCode();

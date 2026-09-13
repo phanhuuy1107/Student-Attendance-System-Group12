@@ -7,28 +7,30 @@ TEMPLATE = app
 INCLUDEPATH += src/Model \
                src/View \
                src/Controller
+
 SOURCES += \
     src/main.cpp \
-    src/View/MainWindow.cpp \
+    src/Controller/AttendanceController.cpp \
     src/Model/AttendanceRecord.cpp \
     src/Model/AttendanceSession.cpp \
     src/Model/Course.cpp \
+    src/Model/DatabaseManager.cpp \
     src/Model/LeaveRequest.cpp \
     src/Model/User.cpp
 
 HEADERS += \
-    src/View/MainWindow.h \
+    src/Controller/AttendanceController.h \
     src/Model/AttendanceRecord.h \
     src/Model/AttendanceSession.h \
     src/Model/Course.h \
+    src/Model/DatabaseManager.h \
     src/Model/LeaveRequest.h \
-    src/Model/User.h \
-    src/Model/DatabaseManager.h
+    src/Model/User.h
 
 FORMS += \
-    src/View/LoginWindow.ui \
-    src/View/StudentCheckIn.ui \
+    src/View/AttendanceReport.ui \
     src/View/LecturerDashboard.ui \
-    src/View/AttendanceReport.ui
+    src/View/LoginWindow.ui \
+    src/View/StudentCheckIn.ui
 
 DESTDIR = ./bin

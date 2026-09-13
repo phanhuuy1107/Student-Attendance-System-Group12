@@ -1,0 +1,11 @@
+debug/main.o
+debug/AttendanceController.o
+debug/AttendanceRecord.o
+debug/AttendanceSession.o
+debug/Course.o
+debug/DatabaseManager.o
+debug/LeaveRequest.o
+debug/User.o
+debug/MainWindow.o
+debug/moc_AttendanceController.o
+debug/moc_MainWindow.o
