@@ -3,3 +3,5 @@
 "Makefile*" 
 build/ 
 *.pro.user 
+.vs/
+*.autosave
