@@ -18,11 +18,11 @@
 
 | STT | Thành viên | Vai trò | Nhiệm vụ chính |
 |:---:|---|---|---|
-| **1** | **Hữu Ý (Leader)** | DevOps & Architect | Setup GitHub, Docker, kiến trúc MVC, ghép code Controller. |
-| **2** | **Kỳ Anh** | Backend & DB | Tạo SQLite DB, code hàm CRUD, quản lý Account/Report. |
-| **3** | **Như Quỳnh** | Core OOP & Unit Test| Code các Class chuẩn UML, sinh QR/PIN, viết Unit Test (QtTest). |
-| **4** | **Huyền Trâm** | Frontend (GUI) | Kéo thả giao diện Qt Designer (Login, Dashboard, Check-in...). |
-| **5** | **Thiên Phú**| QA Lead | Viết Test Case theo biểu mẫu, chạy kiểm thử hộp đen. |
+| **1** | **Hữu Ý (Leader)** | DevOps & Architect | Setup GitHub, Docker, kiến trúc MVC, ghép code Controller. | **120%** |
+| **2** | **Kỳ Anh** | Backend & DB | Tạo SQLite DB, code hàm CRUD, quản lý Account/Report. | **100%** |
+| **3** | **Như Quỳnh** | Core OOP & Unit Test| Code các Class chuẩn UML, sinh QR/PIN, viết Unit Test (QtTest). |**100%** |
+| **4** | **Huyền Trâm** | Frontend (GUI) | Kéo thả giao diện Qt Designer (Login, Dashboard, Check-in...). | **100%** |
+| **5** | **Thiên Phú**| QA Lead | Viết Test Case theo biểu mẫu, chạy kiểm thử hộp đen. |**80%**|
 
 ---
 *📌 Chú ý: Tuyệt đối không push trực tiếp lên nhánh `main`. Hãy tạo nhánh riêng (vd: `feature-ui`) và báo Leader merge code!*
