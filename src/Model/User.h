@@ -26,6 +26,8 @@ public:
     QString getStatus() const;
     QString getRole() const;
     void setStatus(const QString &st);
+    // Hàm băm mật khẩu tĩnh để Controller gọi được mà không cần tạo đối tượng User
+    static QString hashPassword(const QString& password);
 };
 // class admin
 class Admin : public User {

@@ -2,6 +2,7 @@
 #include "AttendanceSession.h"
 #include "AttendanceRecord.h"
 #include <QCryptographicHash>
+#include <QCryptographicHash>
 // xử lý class user
 User::User(int id, const QString &name, const QString &mail, const QString &rawPassword,
            const QString &st, const QString &r)
@@ -92,3 +93,9 @@ void Student::submitLeaveRequest(const QDateTime &date, const QString &reason, c
 int Student::getStudentId() const { return studentId; }
 QString Student::getStudentCode() const { return studentCode; }
 QString Student::getClassName() const { return className; }
+
+QString User::hashPassword(const QString& password) {
+    QByteArray passwordData = password.toUtf8();
+    QByteArray hashedData = QCryptographicHash::hash(passwordData, QCryptographicHash::Sha256);
+    return QString(hashedData.toHex());
+}

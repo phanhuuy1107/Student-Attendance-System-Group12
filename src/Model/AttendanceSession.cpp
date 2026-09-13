@@ -17,9 +17,9 @@ QString AttendanceSession::generatePIN() {
 //FR3: thuật toán sinh mã QR động
 QString AttendanceSession::generateQRCode() {
     QString seed = QString("SESSION:%1:TIME:%2:SALT:%3")
-                       .arg(sessionId)
-                       .arg(startTime.toSecsSinceEpoch())
-                       .arg(QRandomGenerator::global()->generate());
+    .arg(sessionId)
+        .arg(startTime.toSecsSinceEpoch())
+        .arg(QRandomGenerator::global()->generate());
     return QString(QCryptographicHash::hash(seed.toUtf8(), QCryptographicHash::Sha256).toHex());
 }
 //kiểm tra TTL của phiên điểm danh
@@ -54,3 +54,13 @@ QString AttendanceSession::getPIN() const { return pinCode; }
 QDateTime AttendanceSession::getStartTime() const { return startTime; }
 int AttendanceSession::getDuration() const { return duration; }
 QString AttendanceSession::getStatus() const { return status; }
+
+AttendanceSession::AttendanceSession(int durationInMinutes) {
+    this->sessionId = 0; // Gán giá trị mặc định để tránh lỗi bộ nhớ sinh mã QR
+    this->courseId = 0;
+    this->duration = durationInMinutes;
+    this->status = "Active"; // Bắt buộc phải có để mở phiên
+    this->startTime = QDateTime::currentDateTime(); // Bắt buộc để tính toán thời gian đếm ngược
+    this->pinCode = generatePIN();
+    this->qrCode = generateQRCode();
+}

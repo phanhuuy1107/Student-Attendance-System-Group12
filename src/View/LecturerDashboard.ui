@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LecturerDashboard</class>
+ <widget class="QMainWindow" name="LecturerDashboard">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -79,19 +79,6 @@
     </property>
     <property name="text">
      <string>Duration: [ 15 ] minutes</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="btnCreateSession">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>160</y>
-      <width>211</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>CREATE ATTENDANCE SESSION</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -172,6 +159,45 @@ color: black;</string>
     </property>
     <property name="text">
      <string>                  QR CODE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCreateSession">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Session</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLogout">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>490</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Log Out</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnViewReport">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>View Reports</string>
     </property>
    </widget>
   </widget>
