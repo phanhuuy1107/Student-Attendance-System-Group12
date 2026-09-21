@@ -14,7 +14,6 @@
 * **Kiểm thử:** Tuân thủ tuyệt đối `Testing Document Template` của GV.
 
 ## 🎯 3. Phân Công Công Việc (Task Assignment)
-##🎓 STUDENT ATTENDANCE SYSTEM - GROUP 12
 ## 👥 Team Member Task Assignment & Evaluation (Phase 1 & Phase 2)
 
 | No. | Member | Role | Phase 1 Tasks & Progress | Phase 2 Tasks & Progress | Average Progress |
