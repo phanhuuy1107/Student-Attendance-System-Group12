@@ -16,6 +16,7 @@
 ## 🎯 3. Phân Công Công Việc (Task Assignment)
 ##🎓 STUDENT ATTENDANCE SYSTEM - GROUP 12
 ## 👥 Team Member Task Assignment & Evaluation (Phase 1 & Phase 2)
+
 | No. | Member | Role | Phase 1 Tasks & Progress | Phase 2 Tasks & Progress | Average Progress |
 | :---: | :--- | :--- | :--- | :---: | :--- | :---: |
 | **1** | **Hữu Ý** *(Leader)* | DevOps & Architect | Conceptualized system design, designed overall architecture, set up GitHub, and managed task allocations. | 100% | Set up Docker, finalized MVC architecture, handled Controller integration and system assembly. | 100% | **100%** |
